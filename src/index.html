@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Health App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>My Health App</h1>
+    <p>Track weight and workouts — simple and private.</p>
+  </header>
+
+  <main class="container">
+    <section id="weight-section" class="card">
+      <h2>Weight Tracking</h2>
+      <form id="weight-form" class="row">
+        <input type="date" id="weight-date" required>
+        <input type="number" id="weight-value" step="0.1" placeholder="Weight (kg)" required>
+        <button type="submit">Add</button>
+      </form>
+      <div class="chart-wrap">
+        <canvas id="weight-chart"></canvas>
+      </div>
+    </section>
+
+    <section id="workout-section" class="card">
+      <h2>Workout Log</h2>
+      <form id="workout-form" class="row">
+        <input type="date" id="workout-date" required>
+        <input type="text" id="workout-type" placeholder="Exercise (e.g., Run)" required>
+        <input type="number" id="workout-duration" placeholder="Duration (min)" required>
+        <select id="workout-intensity">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button type="submit">Add Workout</button>
+      </form>
+      <ul id="workout-list" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
