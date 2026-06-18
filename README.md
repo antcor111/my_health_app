@@ -18,6 +18,9 @@ live at https://antcor111.github.io/my_health_app/
 	</table>
 </div>
 
+
+<img width="300" height="300" alt="QR code linking to live site" src="https://github.com/user-attachments/assets/a91d8c5e-e63f-4f36-b2df-cb247175124a" />
+
 ## Features
 
 - **Weight Tracking** - Log and monitor your weight over time
