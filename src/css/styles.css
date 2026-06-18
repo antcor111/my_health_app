@@ -17,3 +17,10 @@ button{background:var(--accent);color:white;border:none;cursor:pointer}
 .list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
 .list li{display:flex;justify-content:space-between;align-items:center;padding:.5rem;border-radius:6px;background:#fafbfd;border:1px solid #f0f2f7}
 @media(min-width:768px){.container{grid-template-columns:1fr 1fr}}
+
+/* Top tab links (header) */
+.top-tab{background:linear-gradient(90deg,var(--bg),#fff);border-bottom:1px solid #e6e9ef}
+.top-tab-inner{max-width:980px;margin:0 auto;display:flex;justify-content:flex-end;gap:1rem;padding:.5rem 1rem}
+.top-tab a{color:var(--muted);text-decoration:none;padding:.25rem .5rem;border-radius:6px}
+.top-tab a:hover{background:rgba(43,124,255,0.08);color:var(--accent)}
+
